@@ -13,6 +13,7 @@
 
 /packages/*/out/
 /out/
+!packages/electron-updater/out/
 # to not exclude .js.snap (jest snapshots)
 /test/out/**/*.js
 /test/out/**/*.map
