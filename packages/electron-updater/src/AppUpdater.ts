@@ -382,7 +382,7 @@ export abstract class AppUpdater extends EventEmitter {
       versionInfo: updateInfo,
       updateInfo,
       cancellationToken,
-      downloadPromise: this.autoDownload ? this.downloadUpdate(cancellationToken) : null
+      downloadPromise: this.autoDownload ? this.downloadUpdate(cancellationToken).catch(err => {}) : null
     }
   }
 
